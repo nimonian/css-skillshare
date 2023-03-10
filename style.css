@@ -1,0 +1,46 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.outer {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.inner {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.slide {
+    height: 100vh;
+    width: 100vw;
+    flex: none;
+    display: grid;
+    place-content: center;
+    color: whitesmoke;
+    font-size: 5rem;
+    font-family: monospace;
+    scroll-snap-align: start;
+}
+
+.one {
+    background-color: red;
+}
+.two {
+    background-color: blue;
+}
+.three {
+    background-color: green;
+}
